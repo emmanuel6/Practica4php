@@ -1,0 +1,34 @@
+<html>
+ <body>
+   <?php
+    $Pais=array();
+	$Pais["Mexico"]=array("Monterrey","Tepic","Guadalajara","Puebla","Veracruh");
+	$Pais["Brasil"]=array("Brasilia","Maringa","San pablo","Punta grande","Rio de janeiro");
+	$Pais["Alemenia"]=array("Berlin","Bremen","Hamburgo","Sajonia","Sarre");
+	$Pais["Cuba"]=array("Cardenas","Palma Soriano","Holguin","Habana","Florida");
+	$Pais["Colombia"]=array("Santa Marta","Bogot&aacute","Armenia","Soledad","Bello");
+	$Pais["Argentina"]=array("Rosario","Mendoza","Buenos Aires","Santa fe","San Juan");
+	$Pais["Francia"]=array("Niza","Paris","Poitiers","Reims","Rennes");
+	$Pais["Libia"]=array("Derna","Tripoli","Nalut","Zauiya","Ghat");
+	$Pais["Reino Unido"]=array("Londres","Bristol","Exeter","Eastburn","Telford");
+	$Pais["Uruguay"]=array("Rivera","Las piedras","Melo","Rocha","Trinidad");
+Niza >>
+Nîmes >>
+Paris >>
+Poitiers >>
+Reims >>
+
+	foreach($Pais as $nombre=>$ciudades)
+	{
+	 echo "<dl><ul>";
+	 echo "<dt><li><h3>".$nombre."</h3></li></dt>";
+
+	 foreach($Pais[$nombre] as $ciudad)
+	 {
+	   echo "<dd><li>".$ciudad."</li></dd>";
+	 }
+	 echo "</ul></dl>";
+	}
+   ?>  
+ </body>
+</html>
